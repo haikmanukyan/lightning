@@ -2,36 +2,7 @@
 #include <vector>
 #include <cstdio>
 
-class Tensor
-{
-public:
-	float* data;
-	std::vector<int> shape;
-
-	Tensor(std::vector<int> shape);
-	Tensor* operator() (int indices, ...);
-};
-
-Tensor::Tensor(std::vector<int> shape)
-{
-	this->shape = shape;
-}
-
-Tensor * Tensor::operator() (int indices, ...)
-{
-	std::cout << this->shape.size() << std::endl;
-	return NULL;
-}
-
-void add(const Tensor* lhs, const Tensor*  rhs, Tensor* out)
-{
-
-}
-
-void mul(const Tensor * lhs, const Tensor* rhs, Tensor* out)
-{
-
-}
+#include "Tensor.h"
 
 int main()
 {
@@ -40,6 +11,7 @@ int main()
 
 	a(0,1);
 
+	std::cout << "Press any key" << std::endl;
 	std::getchar();
 	return 0;
 }

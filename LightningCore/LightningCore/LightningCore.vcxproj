@@ -112,6 +112,11 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="Source.cpp" />
+    <ClCompile Include="Tensor.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Tensor.h" />
+    <ClInclude Include="TensorOps.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
