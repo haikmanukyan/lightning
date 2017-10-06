@@ -2,7 +2,7 @@
 #include <vector>
 #include <cstdio>
 
-#include "Tensor.h"
+#include "Core/Tensor.h"
 
 int main()
 {
